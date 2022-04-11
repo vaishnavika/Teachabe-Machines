@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Image recagnition</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+  <center>
+        <h1 class="bg-primary text-uppercase">Image Recogntion</h1><br>
+ <h3>Modle is trained to identyfi the following objects:</h3><br>
+
+ <p class="text-danger"><img src="icons8-heart.gif">Heart</p>
+ <hr>
+ <p class="text-danger"><img src="icons8-flower-doodle-48.png">Flower</p>
+ <hr>
+ <p class="text-danger"><img src="icons8-line-50.png">cylinder</p>
+ <hr>
+ <p class="text-danger"><img src="icons8-box-64.png">box</p>
+ <hr>
+
+ <p>Webcam view</p>
+ <br>
+ <div id="webcam"></div>
+ <div id="output"></div>
+ <button class="btn-info" id="capture" onclick="take_snapshot()">Capture</button>
+ <button class="btn-succes" id="identify" onclick="identify()">Identify</button>
+ <div>Object Name:</div><spam id="object"></spam>
+ <br>
+ <div>Object Accuracy:</div><spam id="accuracy"></spam>
+ 
+    </center>
+    <script src="main.js"></script>
+    </body>
+</html>
